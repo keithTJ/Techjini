@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Radium, { StyleRoot } from 'radium';
 import './App.css';
+
 import Person from './Person/Person';
 
 
@@ -44,23 +46,24 @@ class App extends Component {
     };
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          Hi, I am Keith.
-        </p>
-        <button style={estyle} onClick={() => this.switchNameHandler('Sexy 123')}>Switch name</button>
-        <Person name ={this.state.persons[0].name} age={this.state.persons[0].age} />
-        <Person name ={this.state.persons[1].name} age={this.state.persons[1].age} 
-        click={this.switchNameHandler.bind(this, 'Super Sexy')} changed={this.nameChangeHandler}> My Hobbies: Racing </Person>
-
-      </div>
+      <StyleRoot>
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <h1 className="App-title">Welcome to React</h1>
+          </header>
+          <p className="App-intro">
+            Hi, I am Keith.
+          </p>
+          <button style={estyle} onClick={() => this.switchNameHandler('Sexy 123')}>Switch name</button>
+          <Person name ={this.state.persons[0].name} age={this.state.persons[0].age} />
+          <Person name ={this.state.persons[1].name} age={this.state.persons[1].age} 
+          click={this.switchNameHandler.bind(this, 'Super Sexy')} changed={this.nameChangeHandler}> My Hobbies: Racing </Person>
+        </div>
+      </StyleRoot>
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now'));
   }
 }
 
-export default App;
+export default Radium(App);
