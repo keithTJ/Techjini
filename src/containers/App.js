@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Person from './Person/Person';
+import Persons from '../components/Persons/Persons';
 
 
 class App extends Component {
@@ -10,7 +10,8 @@ class App extends Component {
       { name: 'Love', age:69 },
       { name: 'Bae', age: 30 }
     ],
-    otherState: 'State demo'
+    otherState: 'State demo',
+    showPersons: false
   }
 
   switchNameHandler = (newName) => {
@@ -55,7 +56,7 @@ class App extends Component {
         <button style={estyle} onClick={() => this.switchNameHandler('Sexy 123')}>Switch name</button>
         <Person name ={this.state.persons[0].name} age={this.state.persons[0].age} />
         <Person name ={this.state.persons[1].name} age={this.state.persons[1].age} 
-        click={this.switchNameHandler.bind(this, 'Super Sexy')} changed={this.nameChangeHandler}> My Hobbies: Racing </Person>
+        click={this.switchNameHandler.bind(this, 'Super Sexy')} changed={this.nameChangeHandler}> My  ies: Racing </Person>
 
       </div>
     );
