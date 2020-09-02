@@ -9,7 +9,7 @@ const controls = [
     { label: 'Meat', type: 'meat' },
 ];//type should be same as the switch statement
 
-const buildControls = (props) => (
+const buildControls = ( props ) => (
     <div className={classes.BuildControls}>
         <p>Current Price: <strong>{props.price.toFixed(2)}</strong></p>
         {controls.map(ctrl => (
@@ -20,6 +20,7 @@ const buildControls = (props) => (
                 removed ={() => props.ingredientRemoved(ctrl.type)} 
                 disabled={props.disabled[ctrl.type]}/>
         ))}
+        <button className={classes.OrderButton} disabled={!props.purchasable} onClick={props.ordered}>Order Now</button>
     </div>
 );
 
