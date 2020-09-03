@@ -1,3 +1,12 @@
+https://github.com/keithTJ/Techjini/tree/burger-builder-deployment/Screenshots
+
+<img src="Screenshots/Screenshot-1.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot-2.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot-3.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot-4.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot-5.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot-6.png" width="500" alt="Not found">
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
