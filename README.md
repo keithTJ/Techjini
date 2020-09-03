@@ -1,6 +1,6 @@
 https://github.com/keithTJ/Techjini/tree/burger-builder-deployment/Screenshots
 
-<img src="http://i.imgur.com/HUjEr9l.png" width="500" alt="gh-pages branch setting">
+<img src="Screenshots/Screenshot from 2020-09-03 12-44-48.png" width="500" alt="gh-pages branch setting">
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
