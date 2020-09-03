@@ -1,6 +1,11 @@
 https://github.com/keithTJ/Techjini/tree/burger-builder-deployment/Screenshots
 
-<img src="Screenshots/Screenshot from 2020-09-03 12-44-48.png" width="500" alt="gh-pages branch setting">
+<img src="Screenshots/Screenshot from 2020-09-03 12-44-48.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot from 2020-09-03 12-45-03.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot from 2020-09-03 12-45-16.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot from 2020-09-03 12-45-24.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot from 2020-09-03 12-46-19.png" width="500" alt="Not found">
+<img src="Screenshots/Screenshot from 2020-09-03 12-46-28.png" width="500" alt="Not found">
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
