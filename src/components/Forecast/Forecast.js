@@ -15,7 +15,7 @@ class Forecast extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://api.openweathermap.org/data/2.5/forecast?lat=12.9141&lon=74.8560&units=metric&appid=9ab4481d0787a1095ae94f2695742c57')
+        axios.get('https://api.openweathermap.org/data/2.5/forecast?lat=12.9141&lon=74.8560&units=metric&appid=9ab4481d0787a1095ae94f2695742c57')
             .then(response => {
                 const dailyData = response.data.list.filter(filteredData => filteredData.dt_txt.includes('12:00:00'));
                 const responsedata = response.data.list;
