@@ -1,0 +1,5 @@
+.DivStyle {
+    display: -webkit-inline-box;
+    flex-flow: wrap;
+    text-decoration: none;
+}
