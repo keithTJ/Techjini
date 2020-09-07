@@ -62,8 +62,6 @@ class Forecast extends Component {
                     tempHigh={igKey.main.temp_max}
                     tempLow={igKey.main.temp_min}
                     description={igKey.weather[0].description}
-                    hourlyDataDisplay={null}
-                    dateText={null}
                     footer={igKey.dt_txt.split(' ')[1]} />;
             });
             this.setState({ isClicked: true, forecastDataDisplay: forecastData });
@@ -83,8 +81,7 @@ class Forecast extends Component {
                         tempHigh={igKey.main.temp_max}
                         tempLow={igKey.main.temp_min}
                         description={igKey.weather[0].description}
-                        hourlyDataDisplay={this.hourlyDataDisplay}
-                        dateText={igKey.dt_txt}
+                        footer={igKey.dt_txt.split(' ')[0]}
                     /></Link>;
             });
         }
@@ -94,6 +91,7 @@ class Forecast extends Component {
                 <div className="DivStyle">
                     {forecastData}
                 </div>
+                <hr style={{ width: '20px' }}/>
                 <div className="DivStyle">
                     {this.state.isClicked ? this.state.forecastDataDisplay : <div></div>}
                 </div>
